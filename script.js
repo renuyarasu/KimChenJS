@@ -1,31 +1,13 @@
-// JavaScript: String methods and concat
+// JavaScript: Template literal
 console.clear();
 
-let firstname = 'VedaGna';
-let lastname = 'Yarasu';
-let val;
+let name = 'VedaGna';
+let drink = 'Thums Up';
+let age = 5;
 
-// concatenation
-val = firstname + lastname;
-val = firstname + ' ' + lastname;
+let message;
 
-// append
-val = 'VedaGna';
-val += ' Yarasu';
+message = "Hello, my name is " + name + ". I love drink " + drink + "."
+message = `Hello, my name is ${name}. I love drink ${drink}.`
 
-// escaping
-val = "This chapter describes JavaScript's expressions and operators, including assignment, comparison, arithmetic, bitwise, logical, string, ternary and more";
-val = 'This chapter describes JavaScript\'s expressions and operators, including assignment, comparison, arithmetic, bitwise, logical, string, ternary and more';
-
-// length
-val = firstname.length
-
-// concat
-val = firstname.concat(' ', lastname)
-
-// change case
-val = firstname.toUpperCase()
-val = lastname.toLowerCase()
-
-
-console.log(val);
+console.log(message);
