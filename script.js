@@ -1,25 +1,26 @@
-// JavaScript: Convert to string
+// JavaScript: Convert to Number
 console.clear();
 
 
 let val;
 
-// Numbe to string
-val = 9999;
-val = String(val)
+// String to Numbe
+val = 5;
+val = Number(val)
 
-// Boolean to string
+// Boolean to Numbe
 val = true;
-val = String(val)
+val = false;
+val = Number(val)
 
-// Date to string
-val = new Date();
-val = val.toString()
+// true/ false/ null is o
+val = 'Renu';
+val = [1, 2, 3, 4, 5];
+val = Number(val)
+val = parseInt('12.35')
+val = parseFloat('12.35')
 
-// Array to string
-val = [1, 2, 3, 4, 5]
-val = String(val)
 
 console.log(val);
 console.log(typeof val);
-console.log(val.length);
+console.log(val.toFixed(2));
